@@ -18,3 +18,15 @@ export default {
   props: ['title', 'description', 'link'],
 };
 </script>
+<style scoped>
+li {
+  margin: auto;
+  max-width: 40rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+</style>
