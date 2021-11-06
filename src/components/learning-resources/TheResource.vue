@@ -63,7 +63,6 @@ export default {
         description: description,
         link: url,
       };
-
       this.storedResources.unshift(newResource);
       this.selectedTab = 'stored-resources';
     },
