@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <teleport to="body">
     <div id="blur" @click="$emit('close')"></div>
     <dialog open>
       <header>
@@ -10,14 +10,13 @@
       <section>
         <slot> </slot>
       </section>
-
       <menu>
         <slot name="actions">
           <base-button @click="$emit('close')">Close</base-button>
         </slot>
       </menu>
     </dialog>
-  </div>
+  </teleport>
 </template>
 
 <script>
